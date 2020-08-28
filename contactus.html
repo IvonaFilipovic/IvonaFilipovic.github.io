@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact Us</title>   
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+input[type=reset] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=reset]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+ 
+.navbar {
+  overflow: hidden;
+  background-color: #041226;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 45px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Didot";
+  font-style: normal;
+  font-variant: normal;
+  
+}
+
+.navbar a:hover {
+  background: #041226;
+  color: white;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+    margin: -20px;
+}
+.navbar-right {
+  float: right;
+}
+    
+.logo {
+display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    height: 80px;
+    margin-right: -5px;
+    margin-top: -25px; 
+    float: left;
+    }
+ .footer {
+  background-color: #041226;
+  padding: 2px;
+}
+    .footertext {
+        float: left;
+        margin-left: 20px;
+        margin-top: 10px;
+        font-family: "Didot";
+        letter-spacing: 2px;
+        font-size: 14px;
+        color: white;      
+    }
+    .footertext1 {
+        float: right;
+        margin-left: 20px;
+        margin-top: 10px;
+        font-family: "Didot";
+        letter-spacing: 2px;
+        font-size: 14px;
+        color: white;   
+    }
+      #link { color: white; }
+     #link {text-decoration: none;}
+</style>
+</head>
+<body>
+<div class="navbar">
+<a href="main.html"><img class="logo" src="logo2.jpg"></a>
+    <a href="about.html">Complex</a>
+    <a href="montenegro.html">Montenegro</a>
+    <a href="contractor.html">Contractor</a>
+    <a href="location.html">Location</a>
+    <a href="health.html">Health</a>
+    <a href="contactus.html">Contact Us</a>
+    <div class= "navbar-right">
+     <a href="main.html">EN</a>
+    <a href="main.html">MNE</a>
+    <a href="main.html">RU</a>
+ </div>
+</div>
+
+<div class="container">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+    <p>Leave us a message:</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="montenegro1.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="contact.php" method="post" action="contact.php">
+        <label for="fname">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name..">
+          <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Your email..">
+           <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="The subject..">     
+          <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" name="submit" value="Submit">        
+        <input type="reset" value="Clear">
+      </form>
+    </div>
+  </div>
+</div>
+   
+
+<div class="footer">
+      <h2 class="footertext">Igalo Gardens    |    <a id="link" href="mailto:villdor@mail.ru">villdor@mail.ru</a>    |    +381616104827</h2>
+    <h2 class="footertext1">42°27'29.4"N 18°30'09.8"E </h2> 
+    <div style="clear: both"></div>
+    </div>   
+    
+    
+
+</body>
+</html>

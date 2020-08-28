@@ -1,15 +1,287 @@
 <!DOCTYPE html>
 <html>
-<title>Test</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<title>Igalo Gardens</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { margin:0; }  
+* {
+  box-sizing:border-box;
+}
 
+body {
+  margin: 0;
+    
+}
+.container {
+  padding: 64px;
+}
 
-<footer> 
-  <p>Find me on social media.</p>
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.column-55 {
+  float: left;
+  width: 55%;
+  padding: 20px;
+}
+
+.column-45 {
+  float: left;
+  width: 45%;
+  padding: 20px;
+}
+
+.large-font {
+  font-size: 48px;
+  color: #041226;
+  font-family: "Didot";
+}
+
+.large-font1 {
+  font-size: 48px;
+  color: #f6c363;
+  font-family: "Didot";
+}
+
+.button {
+  border: none;
+  color: #f6c363;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #041226;
+  font-family: "Didot";
+    }
+    
+.navbar {
+  overflow: hidden;
+  background-color: #041226;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 45px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Didot";
+  font-style: normal;
+  font-variant: normal;
   
-</footer>
+}
 
+.navbar a:hover {
+  background: #041226;
+  color: white;
+}
 
+.main {
+  padding: 16px;
+  margin-top: 30px;
+    margin: -20px;
+}
+.navbar-right {
+  float: right;
+}
+.header1 {
+ background-image: url(naslovna-01.jpg);
+ height: 725px; 
+ 
+ background-position: center; 
+ background-repeat: no-repeat; 
+ background-size: cover; 
+
+ }
+ .image-text {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  font-family: "Didot";
+  font-style: normal;
+  font-variant: small-caps;
+  letter-spacing: 3px;
+  font-size: 30px;
+  color: #041226;
+   
+animation: fadeIn ease 5s;
+-webkit-animation: fadeIn ease 5s;
+}
+
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+      
+ .logo {
+display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    height: 80px;
+    margin-right: -5px;
+    margin-top: -25px; 
+    float: left;
+    }
+ .footer {
+  background-color: #041226;
+  padding: 2px;
+}
+    .footertext {
+        float: left;
+        margin-left: 20px;
+        margin-top: 10px;
+        font-family: "Didot";
+        letter-spacing: 2px;
+        font-size: 14px;
+        color: white;      
+    }
+    .footertext1 {
+        float: right;
+        margin-left: 20px;
+        margin-top: 10px;
+        font-family: "Didot";
+        letter-spacing: 2px;
+        font-size: 14px;
+        color: white;   
+    }
+      #link { color: white; }
+     #link {text-decoration: none;}
+  
+    h2
+{
+line-height: 5px;
+}
+       h1
+{
+line-height: 15px;
+   
+}
+    
+.maintext{
+    font-family: "Montserrat",sans-serif;
+    font-style: normal;
+    color: #9b9b9b;    
+    }
+    
+#tag {
+       font-family: "Montserrat",sans-serif;
+        font-weight: 200;
+        font-size: 20px;
+       position: relative;
+    }    
+    
+</style>
+</head>
+<body>
+    
+    
+    
+<div class="navbar">
+<a href="main.html"><img class="logo" src="logo2.jpg"></a>
+    <a href="about.html">Complex</a>
+    <a href="montenegro.html">Montenegro</a>
+    <a href="contractor.html">Contractor</a>
+    <a href="location.html">Location</a>
+    <a href="health.html">Health</a>
+    <a href="contactus.html">Contact Us</a>
+    <div class= "navbar-right">
+     <a href="main.html">EN</a>
+    <a href="main.html">MNE</a>
+    <a href="main.html">RU</a>
+ </div>
+</div>
+
+<div class="main">
+<div class="header1">
+<div class="image-text">
+<h1>Igalo Gardens</h1>
+    
+    <h2 id="tag">Where your Health Matters</h2>
+    
+ </div>
+</div>
+    <!-- The About Section -->
+<div class="container">
+  <div class="row">
+    <div class="column-55">
+      <h1 class="large-font"><b>About the</b></h1>
+      <h2 class="large-font1"><b>Complex</b></h2><p class="maintext">Within the complex there are many arranged walking paths, parks with greenery and rest places, as well as a children's playground. There are also 7 more swimming pools, including 1 for children. To the left of the complex, a panoramic lift is planned to reach the highest point of the complex. In order to reduce exhaust emissions, transport within the complex, as well as to the beach, will take place by electric cars. The complex would lease a part of the beach in front of the Simo Milosevic Institute, and for its guests would also provide its own transportation to the most beautiful beaches on Zanjac and Miriste.</p>
+<a href="about.html"><button class="button">Read More</button></a>    </div>
+    <div class="column-45">
+        <img src="project2.jpg" width="450" height="471" style="max-width:100%;height:auto;">
+    </div>
+  </div>
+</div>
+
+<!-- Montenegro Section -->
+<div class="container" style="background-color:#f1f1f1">
+  <div class="row">
+    <div class="column-45">
+      <img src="montenegro.jpg" width="450" height="471" style="max-width:100%;height:auto;">
+    </div>
+    <div class="column-55">
+      <h1 class="large-font"><b>Welcome to</b></h1>
+      <h2 class="large-font1"><b>Montenegro</b></h2><p class="maintext"> Montenegro is a Balkan country with rugged mountains, medieval villages and a narrow strip of beaches along its Adriatic coastline. The Bay of Kotor, resembling a fjord, is dotted with coastal churches and fortified towns such as Kotor and Herceg Novi. Durmitor National Park, home to bears and wolves, encompasses limestone peaks, glacial lakes and 1,300m-deep Tara River Canyon.</p>
+<a href="montenegro.html"><button class="button"> Read More</button></a>    </div>
+  </div>
+</div>
+
+<!-- The Contractor Section -->
+<div class="container">
+  <div class="row">
+    <div class="column-55">
+     <h1 class="large-font"><b>More on the</b></h1>
+      <h2 class="large-font1"><b>Contractor</b></h2><p class="maintext">Villdor is a company that...Villdor is a company that...Villdor is a company that...Villdor is a company that...Villdor is a company that...Villdor is a company that...Villdor is a company that...Villdor is a company that...Villdor is a company that...Villdor is a company that...Villdor is a company that...Villdor is a company that...Villdor is a company that...Villdor is a company that...Villdor is a company that...Villdor is a company that...Villdor is a company that...Villdor is a company that...Villdor is a company that...</p>
+      <a href="contractor.html"><button class="button"> Find out More</button></a>
+
+    </div>
+    <div class="column-45">
+        <img src="http://totan.ru/wp-content/uploads/2013/10/makalunfp2.jpg" width="450" height="471" style="max-width:100%;height:auto;">
+    </div>
+  </div>
+</div>
+<!-- Location Section -->
+<div class="container" style="background-color:#f1f1f1">
+  <div class="row">
+    <div class="column-45">
+      <img src="locationigalo.jpg" width="450" height="471" style="max-width:100%;height:auto;">
+    </div>
+    <div class="column-55">
+      <h1 class="large-font"><b>Our convenient</b></h1>
+      <h2 class="large-font1"><b> Location</b></h2><p class="maintext">Located  in Igalo, next to Herceg Novi. It is 6 km from the Croatian border, 26 km from Cilipi airport and 40 km from Dubrovnik. 28 km south, there is Tivat Airport. The whole complex is located on a hill called Osmanova Glavica. It is about 450 m away from the sea. The access road (street II of the Dalmatian Brigade) is separated from the highway at the gas station. </p>
+<a href="location.html"><button class="button">Read More</button></a>    </div>
+  </div>
+</div>
+    <!-- The Health Section -->
+<div class="container">
+  <div class="row">
+    <div class="column-55">
+      <h1 class="large-font"><b>Improve your</b></h1>
+      <h2 class="large-font1"><b>Health</b></h2><p class="maintext">The Institute for Physical Medicine, Rehabilitatiton and Rheumatology „Dr Simo Milosevic“ JSC Igalo is considered to be one of the largest and most famous institutions for multidisciplinary spa treatment on the Balkans. It is a pioneer of the modern physical and preventive medicine, rehabilitation, thalassotherapy and wellness, and became one of the leading international centers for rehabilitation of children, adults and seniors.</p>
+      <a href="health.html"><button class="button">Find out More</button></a>
+
+    </div>
+    <div class="column-45">
+        <img src="https://www.bikingcroatia.com/images/content/uploads/img_1452.jpg"width="450" height="471" style="max-width:100%;height:auto;">
+    </div>
+  </div>
+</div>
+</div> 
+<div class="footer">
+    <h2 class="footertext">Igalo Gardens    |    <a id="link" href="mailto:villdor@mail.ru">villdor@mail.ru</a>    |    +381616104827</h2>
+    <h2 class="footertext1">42°27'29.4"N 18°30'09.8"E </h2> 
+    <div style="clear: both"></div>
+    </div>
+
+</body>
 </html>
-
