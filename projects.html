@@ -1,0 +1,261 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<title>IF Projects</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: Bodoni MT;
+}
+
+header {
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+  color: #072033;
+    }
+
+nav {
+  float: left;
+  width: 30%;
+  line-height: 150px;
+  font-size: 20px;
+}
+nav ul {
+  list-style-type: none;
+    }
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+ color: white;
+}
+section {
+        background-color: #072033;
+    }
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {  
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 25px;
+  background-color: white;
+  text-align: center;
+  color: #072033;
+  letter-spacing: 1.5px;
+  word-spacing: 10px;
+}
+    
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+a.whitelink { 
+    color: white;
+    text-decoration:none;
+}
+a.blacklink { 
+    color:#072033;
+    text-decoration:none;
+}
+a.blacklink:hover, a.blacklink:focus {
+    font-size: 20px;
+    text-decoration:underline;
+    text-decoration-color: #0EFADD;
+}
+
+a.whitelink:hover, a.whitelink:focus {
+    text-decoration:underline;
+    text-decoration-color: #0EFADD;
+}
+    
+a.projectlink  
+    {
+    color:white;
+    text-decoration:none;
+    font-size: 20px; 
+    font-weight: 900;    
+    }
+a.projectlink:hover, a.projectlink:focus {
+  text-decoration:underline;
+    text-decoration-color: white;
+    }
+    
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 110px;
+  text-align: center;
+  font-size: 15px;
+  cursor: pointer;
+  color: white;
+}
+
+.containerTab {
+  padding: 20px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.closebtn {
+  float: right;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+<header>
+  <h2>Ivona Filipovic</h2>
+</header>
+<section>
+  <nav>
+    <ul>
+      <li><a class="whitelink"  href="index.html">About</a></li>
+      <li><a class="whitelink" href="projects.html">Projects</a></li>
+      <li><a class="whitelink"  href="cv.html">CV</a></li>
+ </ul>
+  </nav>
+  
+  <article>
+
+<div style="text-align:center">
+  <h2>My Projects</h2>
+  <p>Click on the boxes below to find out more about each project:</p>
+</div>
+
+<div class="row">
+  <div class="column" onclick="openTab('b1');" style="background-color: darkgreen;">
+      Java Poker Game
+  </div>
+  <div class="column" onclick="openTab('b2');" style="background-color: darkblue;">
+    Real Estate Website
+  </div>
+  <div class="column" onclick="openTab('b3');" style="background-color: darkred;">
+    Simple Calculator in C
+  </div>
+</div>
+
+<div id="b1" class="containerTab" style="display:none;background:darkgreen">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Java Poker Game</h2>
+  <p>For my university team project, we made an online poker client, which allows the player to host poker games for other online players, join remote poker games hosted by other players, play poker games with A.I. participants, and record the particular player's skill level. The game uses the “Texas Hold’em” ruleset, where each player is handed two cards, and then five community cards are dealt face down. They are revealed in three stages; the flop, the turn and the river. In the flop, the first three community cards are revealed, and the turn and river each reveal one of the remaining cards. The goal of the game is to have the best hand after the five community cards have been revealed. Players bet on their hand between each of the rounds, entering money into the pot. After these 3 rounds of betting, if all but 1 player has folded, then that player wins the pot. However, if there exist 2 or more players after the rounds of betting that have not folded, then the players each show their two cards to each-other - whoever has the best combination of both their cards and the community cards will win the pot. However, if there exists another player with a same-strength combination, then the pot is split equally between them, as per the usual rules. The game also includes a text chat that allows the players to communicate with each other while playing the game. Furthermore, each hosted game can have custom textures enabled which keeps the look of the game constant across all players. We used a database to store player information like hands played win/loss ratio and money won/lost, which is updated by the server at the end of each game. The game allows players to play against other users or A.I. players, and the A.I. players can be added to and removed from the server when the user requests.
+</p>
+    <p>
+I mainly worked on the GUI and audio of the game as well as helping with the database and network connectivity. co</p>
+ <p><a class="projectlink" href="https://github.com/IvonaFilipovic/Java-Poker-Game.git">Github link to project</a>   
+    </p>
+    <p>
+    <img src="pokergame.jpg" alt="Photo" width="32%" height="200">  
+    <img src="pokergame1.jpg" alt="Photo" width="32%" height="200">    
+    <img src="pokergame2.jpg" alt="Photo" width="32%" height="200"> 
+        </p>
+</div>
+
+<div id="b2" class="containerTab" style="display:none;background:darkblue">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Real Estate Website</h2>
+  <p>This is an ongoing project. I am developing a website for a real estate project in Montenegro using primarily HTML, javascript and CSS. The website is fully responsive and resizes well to all screen sizes. Web design and development is something I am very new to so I am learning as I go during this project.</p>
+     <p><a class="projectlink" href="https://github.com/IvonaFilipovic/IgaloGardens.git">Github link to project</a>   
+    </p>
+    <p>
+    <img src="website.jpg" alt="Photo" width="32%" height="200">  
+    <img src="website1.jpg" alt="Photo" width="32%" height="200">    
+    <img src="website2.jpg" alt="Photo" width="32%" height="200"> 
+        </p>
+</div>
+
+<div id="b3" class="containerTab" style="display:none;background:darkred">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Simple Calculator in C</h2>
+  <p>Created a simple calculator in C that shows error messages if used incorrectly.</p>
+    <p><a class="projectlink" href="https://github.com/IvonaFilipovic/SimpleCalculator.git">Github link to project</a>   
+    </p>
+    <p>
+    <img src="calc.jpg" alt="Photo" width="32%" height="200">  
+    <img src="calc1.jpg" alt="Photo" width="32%" height="200">    
+    <img src="calc2.jpg" alt="Photo" width="32%" height="200"> 
+        </p>
+</div>
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+    
+    
+    
+    
+    </article>
+</section>
+
+<footer>
+  <p>
+    <a class="blacklink" href="https://www.linkedin.com/in/ivona-filipovic/">LinkedIn</a> |
+    <a class="blacklink" href="https://github.com/IvonaFilipovic">Github</a> |
+    <a class="blacklink" href="mailto:ivona.filipovich@gmail.com">Email</a>
+
+    </p>
+</footer>
+
+<script>
+function openTab(tabName) {
+  var i, x;
+  x = document.getElementsByClassName("containerTab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.display = "block";
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
