@@ -97,7 +97,7 @@ a.projectlink:hover, a.projectlink:focus {
     
 .column {
   float: left;
-  width: 33.33%;
+  width: 25%;
   padding: 110px;
   text-align: center;
   font-size: 15px;
@@ -154,6 +154,9 @@ a.projectlink:hover, a.projectlink:focus {
   <div class="column" onclick="openTab('b3');" style="background-color: darkred;">
     Simple Calculator in C
   </div>
+    <div class="column" onclick="openTab('b4');" style="background-color: darkorange;">
+    Andorid Java App
+  </div>
 </div>
 
 <div id="b1" class="containerTab" style="display:none;background:darkgreen">
@@ -197,9 +200,19 @@ I mainly worked on the GUI and audio of the game as well as helping with the dat
     <img src="calc2.jpg" alt="Photo" width="32%" height="200"> 
         </p>
 </div>
+    <div id="b4" class="containerTab" style="display:none;background:darkorange">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Andorid Java App</h2>
+  <p>I developed a workout planner app with a simple and user-friendly user interface that focuses on letting the user design and customise their workout the way they want to and then track their workouts. The app is called “Plan Your Lift” and was made in Android Studio using Java. This was the first time I used Android studio or developed an Android app.</p>
+    <p><a class="projectlink" href="https://github.com/IvonaFilipovic/Plan-Your-Lift.git">Github link to project</a>   
+    </p>
+    <p>
+    <img src="calc.jpg" alt="Photo" width="32%" height="200">  
+    <img src="calc1.jpg" alt="Photo" width="32%" height="200">    
+    <img src="calc2.jpg" alt="Photo" width="32%" height="200"> 
+        </p>
+</div>
     
-    
-      
       
       
       
@@ -245,17 +258,3 @@ function openTab(tabName) {
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
